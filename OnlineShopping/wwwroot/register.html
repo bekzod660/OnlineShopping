@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!---Coding By CoderGirl | www.codinglabweb.com--->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login & Registration Form | CoderGirl</title>
+    <!---Custom CSS File--->
+    <link rel="stylesheet" href="/Login & Registration Form in HTML CSS/style.css">
+</head>
+<body>
+    <div class="container">
+        <input type="checkbox" id="check">
+        <div class="login form">
+            <header>Login</header>
+            <form action="https://localhost:7084/user/Login" method="post">
+                <input type="email" name="Email" placeholder="Enter your email">
+                <input type="password" name="Password" placeholder="Create a password">
+                <input type="submit" value="Login">
+            </form>
+                <a href="#">Forgot password?</a>
+            <div class="signup">
+                <span class="signup">
+                    Don't have an account?
+                    <label for="check">Signup</label>
+                </span>
+            </div>
+        </div>
+        <div class="registration form">
+            <header>Signup</header>
+            <form action="https://localhost:7084/user/create" method="post">
+                <input type="text" name="Name" placeholder="Enter your name">
+                <input type="email" name="Email" placeholder="Enter your email">
+                <input type="password" name="Password" placeholder="Create a password">
+                <input type="password" name="ConfirmPassword" placeholder="Confirm your password">
+                <input type="submit"   value="Sign up">
+            </form>
+
+            <div class="signup">
+                <span class="signup">
+                    Already have an account?
+                    <label for="check">Login</label>
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
